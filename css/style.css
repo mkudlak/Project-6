@@ -1,10 +1,10 @@
-nav, header, .services .flex-container, .projects .flex-container, .logos .flex-container, .price .flex-container, .premium .flex-container, .facts .flex-container, .media .flex-container {
+nav, header, .services .flex-container, .projects .flex-container, .logos .flex-container, .price .flex-container, .premium .flex-container, .facts .flex-container, .media .flex-container, .contact .flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center; }
 
-header .header-title button, .about button, .projects .more-projects, .price .flex-container .price-item button, .premium button {
+header .header-title button, .about button, .projects .more-projects, .price .flex-container .price-item button, .premium button, .contact .flex-container button {
   border-radius: 30px;
   padding: 15px 60px;
   border: none;
@@ -15,15 +15,15 @@ header .header-title button, .about button, .projects .more-projects, .price .fl
   transition-duration: 0.3s;
   -webkit-transition-duration: 0.4s;
   /* Safari */ }
-  header .header-title button:hover, .about button:hover, .projects .more-projects:hover, .price .flex-container .price-item button:hover, .premium button:hover {
+  header .header-title button:hover, .about button:hover, .projects .more-projects:hover, .price .flex-container .price-item button:hover, .premium button:hover, .contact .flex-container button:hover {
     cursor: pointer;
     opacity: 1; }
 
-.about, .services, .projects, .team, .comments, .price, .premium, .facts {
+.about, .services, .projects, .team, .comments, .price, .premium, .facts, .contact {
   padding: 50px 70px; }
-  .about h2, .services h2, .projects h2, .team h2, .comments h2, .price h2, .premium h2, .facts h2 {
+  .about h2, .services h2, .projects h2, .team h2, .comments h2, .price h2, .premium h2, .facts h2, .contact h2 {
     font-size: 1.5em; }
-  .about h4, .services h4, .projects h4, .team h4, .comments h4, .price h4, .premium h4, .facts h4 {
+  .about h4, .services h4, .projects h4, .team h4, .comments h4, .price h4, .premium h4, .facts h4, .contact h4 {
     font-size: white;
     font-weight: 100;
     color: #aeaeae;
@@ -384,5 +384,13 @@ header {
       color: #fc0d1c;
       background-color: white;
       cursor: pointer; }
+
+.contact {
+  border-top: 1px solid #bebebe;
+  color: black;
+  height: 416px; }
+  .contact .flex-container button {
+    background-color: #b88b58;
+    margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */

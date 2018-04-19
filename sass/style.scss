@@ -520,7 +520,20 @@ header {
     cursor: pointer;
    }
   }
-
+ }
+}
+.contact {
+ @extend %section-title-style;
+ border-top: 1px solid #bebebe;
+ color: black;
+ height: 416px;
+ .flex-container {
+  @extend %centering;
+  button {
+   @extend %btn-default;
+   background-color: $gold;
+   margin-top: 20px;
+  }
  }
 }
 
