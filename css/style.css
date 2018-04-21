@@ -1,10 +1,10 @@
-nav, header, .services .flex-container, .projects .flex-container, .logos .flex-container, .price .flex-container, .premium .flex-container, .facts .flex-container, .media .flex-container, .contact .flex-container {
+nav, header, .about .flex-container, .services .flex-container, .projects .flex-container, .logos .flex-container, .price .flex-container, .premium .flex-container, .facts .flex-container, .media .flex-container, .contact .flex-container, footer .flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center; }
 
-header .header-title button, .about button, .projects .more-projects, .price .flex-container .price-item button, .premium button, .contact .flex-container button {
+header .header-title button, .about .flex-container .about-col-1 button, .projects .more-projects, .price .flex-container .price-item button, .premium button, .contact .flex-container button, footer .flex-container .sub {
   border-radius: 30px;
   padding: 15px 60px;
   border: none;
@@ -15,7 +15,7 @@ header .header-title button, .about button, .projects .more-projects, .price .fl
   transition-duration: 0.3s;
   -webkit-transition-duration: 0.4s;
   /* Safari */ }
-  header .header-title button:hover, .about button:hover, .projects .more-projects:hover, .price .flex-container .price-item button:hover, .premium button:hover, .contact .flex-container button:hover {
+  header .header-title button:hover, .about .flex-container .about-col-1 button:hover, .projects .more-projects:hover, .price .flex-container .price-item button:hover, .premium button:hover, .contact .flex-container button:hover, footer .flex-container .sub:hover {
     cursor: pointer;
     opacity: 1; }
 
@@ -92,15 +92,20 @@ header {
       margin-top: 50px; }
 
 .about {
-  height: 530px;
+  height: auto;
   color: black; }
-  .about img {
-    height: 275px; }
-    .about img:hover {
-      cursor: pointer; }
-  .about button {
-    background-color: #b88b58;
-    margin-top: 20px; }
+  .about .flex-container .about-col-1 {
+    text-align: left;
+    width: 55%; }
+    .about .flex-container .about-col-1 button {
+      background-color: #b88b58;
+      margin-top: 20px; }
+  .about .flex-container .about-col-2 {
+    width: 45%; }
+    .about .flex-container .about-col-2 img {
+      height: auto; }
+      .about .flex-container .about-col-2 img:hover {
+        cursor: pointer; }
 
 .services {
   height: auto;
@@ -328,69 +333,148 @@ header {
     width: 36px;
     border-radius: 20px;
     margin: 10px; }
-  .media .flex-container .twitter {
-    color: #FFFFFF;
-    background-color: #4099FF; }
-    .media .flex-container .twitter:hover {
-      color: #4099FF;
-      background-color: white;
-      cursor: pointer; }
-  .media .flex-container .facebook {
-    color: #FFFFFF;
-    background-color: #3B5998; }
-    .media .flex-container .facebook:hover {
-      color: #3B5998;
-      background-color: white;
-      cursor: pointer; }
-  .media .flex-container .google {
-    color: #FFFFFF;
-    background-color: #DB5A3C; }
-    .media .flex-container .google:hover {
-      color: #DB5A3C;
-      background-color: white;
-      cursor: pointer; }
-  .media .flex-container .instagram {
-    color: #FFFFFF;
-    background-color: #5C3D2E; }
-    .media .flex-container .instagram:hover {
-      color: #5C3D2E;
-      background-color: white;
-      cursor: pointer; }
-  .media .flex-container .github {
-    color: #FFFFFF;
-    background-color: #4183C4; }
-    .media .flex-container .github:hover {
-      color: #4183C4;
-      background-color: white;
-      cursor: pointer; }
-  .media .flex-container .linkedin {
-    color: #FFFFFF;
-    background-color: #1178b3; }
-    .media .flex-container .linkedin:hover {
-      color: #1178b3;
-      background-color: white;
-      cursor: pointer; }
-  .media .flex-container .pinterest {
-    color: #FFFFFF;
-    background-color: #bb0f24; }
-    .media .flex-container .pinterest:hover {
-      color: #bb0f24;
-      background-color: white;
-      cursor: pointer; }
-  .media .flex-container .youtube {
-    color: #FFFFFF;
-    background-color: #fc0d1c; }
-    .media .flex-container .youtube:hover {
-      color: #fc0d1c;
-      background-color: white;
-      cursor: pointer; }
+
+.twitter {
+  color: #FFFFFF;
+  background-color: #4099FF; }
+  .twitter:hover {
+    color: #4099FF;
+    background-color: white;
+    cursor: pointer; }
+
+.facebook {
+  color: #FFFFFF;
+  background-color: #3B5998; }
+  .facebook:hover {
+    color: #3B5998;
+    background-color: white;
+    cursor: pointer; }
+
+.google {
+  color: #FFFFFF;
+  background-color: #DB5A3C; }
+  .google:hover {
+    color: #DB5A3C;
+    background-color: white;
+    cursor: pointer; }
+
+.instagram {
+  color: #FFFFFF;
+  background-color: #5C3D2E; }
+  .instagram:hover {
+    color: #5C3D2E;
+    background-color: white;
+    cursor: pointer; }
+
+.github {
+  color: #FFFFFF;
+  background-color: #4183C4; }
+  .github:hover {
+    color: #4183C4;
+    background-color: white;
+    cursor: pointer; }
+
+.linkedin {
+  color: #FFFFFF;
+  background-color: #1178b3; }
+  .linkedin:hover {
+    color: #1178b3;
+    background-color: white;
+    cursor: pointer; }
+
+.pinterest {
+  color: #FFFFFF;
+  background-color: #bb0f24; }
+  .pinterest:hover {
+    color: #bb0f24;
+    background-color: white;
+    cursor: pointer; }
+
+.youtube {
+  color: #FFFFFF;
+  background-color: #fc0d1c; }
+  .youtube:hover {
+    color: #fc0d1c;
+    background-color: white;
+    cursor: pointer; }
 
 .contact {
   border-top: 1px solid #bebebe;
   color: black;
   height: 416px; }
+  .contact .flex-container input {
+    border: none;
+    border-bottom: 2px solid #aeaeae;
+    margin: 10px; }
   .contact .flex-container button {
     background-color: #b88b58;
     margin-top: 20px; }
+
+.map {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left; }
+
+#map {
+  height: 416px;
+  width: 100%;
+  background-color: #aeaeae;
+  opacity: 0.5; }
+  #map:hover {
+    opacity: 1; }
+
+.map-contact {
+  padding: 20px;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  background-color: white;
+  color: #7e7e7e; }
+  .map-contact ul {
+    list-style-type: none; }
+    .map-contact ul li {
+      margin: 20px; }
+      .map-contact ul li i, .map-contact ul li p {
+        display: inline; }
+      .map-contact ul li .fa {
+        text-align: center;
+        background-color: #7e7e7e;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 20px;
+        text-align: center; }
+      .map-contact ul li p {
+        font-size: 12px; }
+
+footer {
+  background-color: black;
+  color: white; }
+  footer .flex-container .footer-col {
+    margin: 20px;
+    width: 30%;
+    align-items: flex-start; }
+  footer .flex-container button {
+    border: none;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    margin: 5px; }
+  footer .flex-container p {
+    font-size: 0.75em;
+    color: #7e7e7e;
+    text-align: left; }
+  footer .flex-container input {
+    border: none;
+    border-bottom: 2px solid #aeaeae;
+    margin: 10px; }
+  footer .flex-container .sub {
+    background-color: #b88b58;
+    margin-top: 20px;
+    line-height: 3px;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

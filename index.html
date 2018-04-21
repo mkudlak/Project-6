@@ -59,7 +59,7 @@
         <h2>About us</h2>
         <h4>Who we are?</h4>
         <div class="flex-container">
-            <div class="col-4">
+            <div class="about-col-1">
                 <p>Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at
                         facilisis est, vel condimentum ligula. Mauris volutpat vitae risus sed pellentesque. Praesent fermentum
                         neque ac tellus gravida, at varius sem accumsan. Nam porta erat id sapien consectetur. Fusce sed
@@ -68,7 +68,7 @@
                         facilisis purus.</p>
                 <button>Learn more</button>
             </div>
-            <div class="col-2">
+            <div class="about-col-2">
                 <img src="images/video.png">
             </div>
         </div>
@@ -478,12 +478,62 @@
     </section>
     <section class="map">
         <div id="map">My map will go here</div>
+        <div class="map-contact">
+            <ul>
+                <li>
+                    <i class="fa fa-envelope-o icon" aria-hidden="true"></i>
+                    <p class="contact-text">PO Box 16122 Collins Street West Victoria 8007 Australia</p>
+                </li>
+                <li>
+                    <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+                    <p class="contact-text">121 King Street, Melbourne Victoria 3000 Australia</p>
+                </li>
+                <li>
+                    <i class="fa fa-mobile icon" aria-hidden="true"></i>
+                    <p class="contact-text">+00 0 1234 456 897</p>
+                </li>
+                <li>
+                    <i class="fa fa-at icon" aria-hidden="true"></i>
+                    <p class="contact-text">bukindesigner@gmail.com</p>
+                </li>
+                <li>
+                    <i class="fa fa-internet-explorer icon" aria-hidden="true"></i>
+                    <p class="contact-text">wwww.envato.com</p>
+                </li>
+            </ul>
+        </div>
     </section>
     <footer>
-
+        <div class="flex-container">
+            <div class="footer-col">
+                <button type="button" class="icon-btn twitter"><i class="fa fa-twitter"></i>
+                </button>
+                <button type="button" class="icon-btn instagram"><i class="fa fa-instagram"></i>
+                </button>
+                <button type="button" class="icon-btn facebook"><i class="fa fa-facebook"></i>
+                </button>
+                <button type="button" class="icon-btn linkedin"><i class="fa fa-linkedin"></i>
+                </button>
+                <button type="button" class="icon-btn youtube"><i class="fa fa-youtube"></i>
+                </button>
+                <button type="button" class="icon-btn pinterest"><i class="fa fa-pinterest"></i>
+                </button>
+                <button type="button" class="icon-btn google"><i class="fa fa-google-plus"></i>
+                </button>
+            </div>
+            <div class="footer-col">
+                <p>Nulla iaculis enim a magna tempor congue. Sed aliquam dignissim hendrerit. Duis erat nulla, pellentesque at enim in, scelerisque placerat nunc. Nulla vestibulum ex sed neque auctor rutrum. Donec fringilla tincidunt aliquet. Nullam rhoncus urna massa, vulputate congue velit pulvinar suscipit. Mauris laoreet blandit pharetra. Suspendisse rutrum dolor at augue convallis, eget dapibus nunc consequat. Sed diam nulla, elementum non laoreet eu,vulputate urna, at pellentesque risus orci in ante.</p>
+            </div>
+            <div class="footer-col">
+                <input id="emailAddress" type="email"><br>
+                <button class="sub">Subscribe</button>
+            </div>
+        </div>
     </footer>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuQhmg7T56SZxl4d5RLr27eBrEw94Ca6A&callback=myMap"></script>
-    <script type="javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuQhmg7T56SZxl4d5RLr27eBrEw94Ca6A&callback=initMap">
+    </script>
 </body>
 
 </html>

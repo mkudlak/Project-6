@@ -133,19 +133,29 @@ header {
 }
 
 .about {
- height: 530px;
- color: $black;
  @extend %section-title-style;
- img {
-  height: 275px;
-  &:hover {
-   cursor: pointer;
+ height: auto;
+ color: $black;
+ .flex-container {
+  @extend %centering;
+  .about-col-1 {
+   text-align: left;
+   width: 55%;
+   button {
+    @extend %btn-default;
+    background-color: $gold;
+    margin-top: 20px;
+   }
+   }
+  .about-col-2 {
+   width: 45%;
+   img {
+    height: auto;
+    &:hover {
+     cursor: pointer;
+    }
+   }
   }
- }
- button {
-  @extend %btn-default;
-  background-color: $gold;
-  margin-top: 20px;
  }
 }
 
@@ -448,7 +458,9 @@ header {
    border-radius: 20px;
    margin: 10px;
   }
-  .twitter {
+ }
+}
+.twitter {
    color: #FFFFFF;
    background-color: #4099FF;
    &:hover {
@@ -456,8 +468,8 @@ header {
     background-color: white;
     cursor: pointer;
    }
-  }
-  .facebook {
+}
+.facebook {
    color: #FFFFFF;
    background-color: #3B5998;
    &:hover {
@@ -465,8 +477,8 @@ header {
     background-color: white;
     cursor: pointer;
    }
-  }
-  .google {
+}
+.google {
    color: #FFFFFF;
    background-color: #DB5A3C;
    &:hover {
@@ -474,8 +486,8 @@ header {
    background-color: white;
    cursor: pointer;
    }
-  }
-  .instagram {
+}
+.instagram {
    color: #FFFFFF;
    background-color: #5C3D2E;
    &:hover {
@@ -483,8 +495,8 @@ header {
     background-color: white;
     cursor: pointer;
    }
-  }
-  .github{
+}
+.github{
    color: #FFFFFF;
    background-color: #4183C4;
    &:hover {
@@ -492,8 +504,8 @@ header {
     background-color: white;
     cursor: pointer;
    }
-  }
-  .linkedin {
+}
+.linkedin {
    color: #FFFFFF;
    background-color: #1178b3;
    &:hover {
@@ -501,8 +513,8 @@ header {
     background-color: white;
     cursor: pointer;
    }
-  }
-  .pinterest {
+}
+.pinterest {
    color: #FFFFFF;
    background-color: #bb0f24;
    &:hover {
@@ -510,8 +522,8 @@ header {
     background-color: white;
     cursor: pointer;
    }
-  }
-  .youtube {
+}
+.youtube {
    color: #FFFFFF;
    background-color: #fc0d1c;
    &:hover {
@@ -519,9 +531,8 @@ header {
     background-color: white;
     cursor: pointer;
    }
-  }
- }
 }
+
 .contact {
  @extend %section-title-style;
  border-top: 1px solid #bebebe;
@@ -529,10 +540,97 @@ header {
  height: 416px;
  .flex-container {
   @extend %centering;
+  input {
+   border: none;
+   border-bottom: 2px solid $grey;
+   margin: 10px;
+  }
   button {
    @extend %btn-default;
    background-color: $gold;
    margin-top: 20px;
+  }
+ }
+}
+.map {
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: left;
+}
+#map {
+ height: 416px;
+ width: 100%;
+ background-color: $grey;
+ opacity: 0.5;
+ &:hover {
+  opacity: 1;
+ }
+}
+.map-contact {
+ padding: 20px;
+ position: absolute;
+ top: 10%;
+ left: 15%;
+ background-color: white;
+ color: #7e7e7e;
+ ul {
+  list-style-type: none;
+  li {
+   margin: 20px;
+  i,p {
+   display: inline;
+  }
+  .fa {
+   text-align: center;
+   background-color: #7e7e7e;
+   color: white;
+   margin: 10px;
+   padding: 10px;
+   border-radius: 20px;
+   font-size: 20px;
+   text-align: center;
+  }
+  p{
+   font-size: 12px;
+  }
+ }
+ }
+}
+footer {
+ background-color: black;
+ color: white;
+ .flex-container {
+  @extend %centering;
+  .footer-col {
+   margin: 20px;
+   width: 30%;
+   align-items: flex-start;
+  }
+  button {
+   border: none;
+   text-align: center;
+   height: 30px;
+   width: 30px;
+   border-radius: 15px;
+   margin: 5px;
+  }
+  p {
+   font-size: $button-size;
+   color: #7e7e7e;
+   text-align: left;
+  }
+  input {
+   border: none;
+   border-bottom: 2px solid $grey;
+   margin: 10px;
+  }
+  .sub {
+   @extend %btn-default;
+   background-color: $gold;
+   margin-top: 20px;
+   line-height: 3px;
+   text-align: center;
   }
  }
 }
